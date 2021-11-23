@@ -1,0 +1,35 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : Text.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 23:23
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This is text - CSS Library.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+.heading {
+    color: #2F281E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.title {
+    color: #2F281E;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 16px;
+    color: #544837;
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : ____Initialize____.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 11:11 AM
+*               Last Modified   : 11/11/2021 - 17:17 PM
+*               Descriptions    : 
+*                   This is an initialize file, use it for import "poppins" fonts,
+*                   basic reset CSS and set style for "#application" CSS selector.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+
+/* --- Begin: Import fonts and reset CSS --------------------------------------------------*/
+
+@import url('   https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+    --primary-background: #FF9900;
+    --border-color: #BCD0E5;
+    --primary-color: #FFFFFF;
+    --logo-color: #173A56;
+    --title-color: #2F281E;
+    --heading-color: #2F281E;
+    --text-color: #544837;
+}
+
+/* --- End: Import fonts and reset CSS ------------------------------------*/
+
+/* --- Begin: Application style -------------------------------------------*/
+
+#application {
+    width: 100%;
+    max-width: 1123px;
+    margin: 10px auto;
+}
+
+#application > div {
+    margin-bottom: 100px;
+}
+
+#application #header,
+#application #footer {
+    margin-bottom: 0;
+}
+
+/* --- Begin: Application style -------------------------------------------*/
+
+/* --- Begin: Logo style --------------------------------------------------*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo > .logo-img {
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-right: 10px;
+}
+
+.logo > .logo-text {
+    color: #173A56;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 900;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Begin: Logo style --------------------------------------------------*/

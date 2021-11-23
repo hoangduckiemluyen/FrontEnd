@@ -1,0 +1,45 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : FillColor.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 23:23
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This is fill color - CSS Library.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+.primary-background {
+    background: #FF9900 !important;
+    color: #FFFFFF !important;
+}
+
+.primary-color {
+    color: #FF9900 !important;
+}
+
+.border-color {
+    border-color: 1px solid #BCD0E5 !important;
+}
+
+.white-color {
+    background: white;
+}
+
+.logo-text-color {
+    color: #173A56 !important;
+}
+
+.title-color {
+    color: #2F281E;
+}
+
+.heading-color {
+    color: #2F281E;
+}
+
+.text-color {
+    color: #544837;
+}

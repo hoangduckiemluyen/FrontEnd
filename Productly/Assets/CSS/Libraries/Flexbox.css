@@ -1,0 +1,48 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : FlexBox.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 23:23
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This is flexbox - CSS Library.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+.flex { 
+    display: flex; 
+}
+
+.flex.direction-col { 
+    flex-direction: column; 
+}
+
+.flex.align-center { 
+    align-items: center; 
+}
+
+.flex.align-start { 
+    align-items: flex-start; 
+}
+
+.flex.align-stretch { 
+    align-items: stretch; 
+}
+
+.flex.justify-end { 
+    justify-content: flex-end; 
+}
+
+.flex.justify-center { 
+    justify-content: center; 
+}
+
+.flex.flex.justify-between {
+    justify-content: space-between;
+}
+
+.flex > .flex1 { 
+    flex: 1; 
+}

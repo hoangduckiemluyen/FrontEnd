@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : Button.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 23:23
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This is padding, margin, size - CSS Library.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.screen-width {
+    width: 100vw;
+}
+
+.screen-height {
+    height: 100vh;
+}

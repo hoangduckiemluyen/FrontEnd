@@ -1,0 +1,32 @@
+.section-content__project {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-content__project-item {
+    width: 45%;
+}
+
+.section-content__project-item:hover {
+}
+
+
+.section-content__project-item-img {
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 2rem;
+}
+
+.section-content__project-item-img::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.section-content__project-item-title {
+    text-align: center;
+    font-weight: bold;
+}

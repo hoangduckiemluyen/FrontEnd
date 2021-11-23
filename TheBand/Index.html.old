@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/IMG/Icon/Rock_Metal.jpeg">
+    <title>The Band</title>
+    <link rel="stylesheet" href="Assets/CSS/Style.css">
+    <link href="Assets/Fonts/Lato/Lato-Light.ttf">
+    <link rel="stylesheet" href="Assets/Fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More <i class="more-symbol ti-angle-down"></i></a> 
+                    <ul class="sub-nav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="header-search">
+                <a href=""><b class="ti-search"></b></a>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="slider-content">
+                <h3>New York</h3>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="band" class="content-frames font-15">
+                <h2 class="title-frames">The Band</h2>
+                <p class="mt30 sub-title-frames">We love music</p>
+                <p class="mt30 justify">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="row mt30">
+                    <div class="col col-triple">
+                        <p class="center">Name</p>
+                        <img src="/Assets/IMG/Band/Member_1.jpg" alt="Member avatar" class="bcenter member-avt">
+                    </div>
+                    <div class="col col-triple">
+                        <p class="center">Name</p>
+                        <img src="/Assets/IMG/Band/Member_1.jpg" alt="Member avatar" class="bcenter member-avt">
+                    </div>
+                    <div class="col col-triple">
+                        <p class="center">Name</p>
+                        <img src="/Assets/IMG/Band/Member_1.jpg" alt="Member avatar" class="bcenter member-avt">
+                    </div>
+                                    </div>
+            </div>
+
+            <div class="bcolor-black">
+                <div id="tour" class="content-frames">
+                    <h2 class="color-white title-frames">Tour Dates</h2>
+                    <p class="color-white mt30 sub-title-frames">Remember to book your tickets!</p>
+                    <ul class=" mt30 list-tickets">
+                        <li class="">September <b class="sold-out">Sold out</b></li>
+                        <li class="">October <b class="sold-out">Sold out</b></li>
+                        <li class="">November <b class="sold">3</b></li>
+                    </ul>
+                    <div class="row mt30">
+                        <div class="col col-triple">
+                            <div class="ticket-item">
+                                <img src="Assets/IMG/Tours/NewYork.jpg" alt="" class="">
+                                <div class="pd15 bcolor-white">
+                                    <h4 class="">New York</h4>
+                                    <p class="color-grey mt15">Fri 27 Nov 2016</p>
+                                    <p class="justify mt15">
+                                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                    </p>
+                                    <a href="" class="mt15 btn">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col col-triple">
+                            <div class="ticket-item">
+                                <img src="Assets/IMG/Tours/Paris.jpg" alt="" class="">
+                                <div class="pd15 bcolor-white">
+                                    <h4 class="">Paris</h4>
+                                    <p class="color-grey mt15">Sat 28 Nov 2016</p>
+                                    <p class="justify mt15">
+                                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                    </p>
+                                    <a href="" class="mt15 btn">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-triple">
+                            <div class="ticket-item">
+                                <img src="Assets/IMG/Tours/SanFrancisco.jpg" alt="" class="">
+                                <div class="pd15  bcolor-white">
+                                    <h4 class="">San Francisco</h4>
+                                    <p class="color-grey mt15">Sun 29 Nov 2016</p>
+                                    <p class="justify mt15">
+                                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                    </p>
+                                    <a href="" class="mt15 btn">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="content-frames">
+                <h2 class="title-frames">Contact</h2>
+                <p class="mt30 sub-title-frames">Fan? Drop a note!</p>
+                <div class="row mt30">
+                    <div class="col col-double contact-info">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-double contac-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-double">
+                                    <input type="text" name="" required placeholder="Mame" id="" class="form-control">
+                                </div>
+                                <div class="col col-double">
+                                    <input type="email" name="" required placeholder="Email" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt8">
+                                <div class="col col-full">
+                                    <input type="text" name="" required placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" class="mt16 btn pull-right" value="SEND">
+                        </form>
+                    </div>           
+                </div>
+            </div>
+
+            <div class="map-footer">
+                <img src="Assets/IMG/Maps/Map.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="social-icon">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest-alt"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="main-link">Powered by <a href="">w3.css</a></p>
+        </div>
+    </div>
+</body>
+</html>

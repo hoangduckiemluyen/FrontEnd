@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Main.css">
+</head>
+<body>
+    <div id="application">
+        <div class="playlist">
+
+        </div>
+        <div class="container">
+            <!-- <div class="title">This is my favorite song! :v</div> -->
+            <div class="img" style="background: url('./IMG/Disc.png');">
+            </div>
+            <audio id="__audio">
+                <source src="../../Home/Music/SeizeTheDay.mp3">
+            </audio>
+            <div class="range">
+                <div class="range-time">
+                    <div class="range-time__number" id="__time-current">00:00</div>
+                    <input type="range" value="0" class="range-time__range" id="__time-control">
+                    <div class="range-time__number" id="__time-duration">00:00</div>
+                </div>
+                <!-- <div class="range-volume" id="__volume-btn">
+                    <input type="range" id="__control-volume">
+                    <i class="ti-volume"></i> 
+                </div>-->
+            </div>
+            <div class="controls">
+                <div class="controls__button" id="__control-random">
+                    <i class="ti-control-shuffle">S</i>
+                </div>
+                <div class="controls__button" id="__control-prev">
+                    <i class="ti-control-skip-backward">Prev</i>
+                </div>
+                <div class="controls__button" id="__control-play">
+                    <i class="ti-control-play">Play</i>
+                </div>
+                <div class="controls__button" id="__control-pause">
+                    <i class="ti-control-pause">Pause</i>
+                </div>
+                <div class="controls__button" id="__control-next">
+                    <i class="ti-control-skip-forward">Next</i>
+                </div>
+                <div class="controls__button" id="__control-loop">
+                    <i class="ti-loop">Loop</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Content/Libraries/Ajax.js"></script>
+    <script>
+
+        GET_ELEMENT = document.querySelector.bind(document);
+
+        var audio           = GET_ELEMENT('#__audio');
+
+        var currentTime     = GET_ELEMENT('#__time-current');
+        var durationTime    = GET_ELEMENT('#__time-duration');
+        var rangeTime       = GET_ELEMENT('#__time-control');
+
+        var controlLoop     = GET_ELEMENT('#__control-loop');
+        var controlRandom   = GET_ELEMENT('#__control-random');
+        var controlPrev     = GET_ELEMENT('#__control-prev');
+        var controlPlay     = GET_ELEMENT('#__control-play');
+        var controlPause    = GET_ELEMENT('#__control-pause');
+        var controlNext     = GET_ELEMENT('#__control-next');
+
+        class TimerProcess {
+            __Seconds;
+            constructor (seconds) {
+                this.__Seconds = seconds;
+            }
+            getSeconds() {
+                var result = Math.trunc(this.__Seconds % 60);
+                return result < 10 ? `0${result}` : result;
+            }
+            getMinutes() {
+                var result = Math.trunc(this.__Seconds / 60 % 60);
+                return result < 10 ? `0${result}` : result;
+            }
+            getHours() {
+                var result = Math.trunc(this.__Seconds / 60 / 60);
+                return result > 0 ? `${result}:` : "";
+            }
+        }
+
+        audio.volume = localStorage.getItem('MasterVolume')/ 100
+        audio.ontimeupdate = function() {
+            var current = new TimerProcess(audio.currentTime);
+            var duration = new TimerProcess(audio.duration);
+
+            currentTime.innerText  = `${    current.getHours()}${
+                                            current.getMinutes()}:${
+                                            current.getSeconds()}`;
+
+            durationTime.innerText  = `${   duration.getHours()}${
+                                            duration.getMinutes()}:${
+                                            duration.getSeconds()}`;
+            audio.volume = localStorage.getItem('MasterVolume') / 100;
+            
+            if(!audio.paused) {
+                controlPlay.style.display = 'none';
+                controlPause.style.display = 'block';
+
+                rangeTime.value =  audio.currentTime * 100 / audio.duration; 
+            }
+            else {
+                controlPause.style.display = 'none';
+                controlPlay.style.display = 'block';
+            }
+        }
+
+        rangeTime.onchange = function() {
+            audio.currentTime = audio.duration * this.value / 100; 
+        } 
+
+        controlPlay.onclick = function() {
+            audio.play();
+        }
+
+        controlPause.onclick = function() {
+            audio.pause();
+        }
+
+        controlLoop.onclick = function() {
+            if(audio.loop) {
+                audio.loop = false;
+                this.classList.remove('controls__button--actived');
+            }
+            else {
+                audio.loop = true;
+                this.classList.add('controls__button--actived');
+            }
+        }
+
+        var randomEnabled = false;
+        controlRandom.onclick = function() {
+            if(randomEnabled) {
+                randomEnabled = false;
+                this.classList.remove('controls__button--actived');
+            }
+            else {
+                randomEnabled = true;
+                this.classList.add('controls__button--actived');
+            }
+        }
+    </script>
+</body>
+</html>

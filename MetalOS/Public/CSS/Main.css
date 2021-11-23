@@ -1,0 +1,166 @@
+#header {
+    color: white;
+    text-shadow: 0 0 0.2rem black;
+    height: 10rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    user-select: none;
+    z-index: 100;
+    transition: color linear 0.5s;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-left__img {
+}
+
+.header-center__nav {
+    padding: 0.6rem 0;
+    margin: 0 1.4rem;
+    position: relative;
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+
+.header-center__nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    border-bottom: 0.2rem solid white;
+    transition: all linear 0.5s;
+}
+
+.header-center__nav:hover::before{
+    left: 0;
+    right: 0;
+}
+
+.header-center__nav--actived.header-center__nav::before {
+    cursor: default;
+    left: 0;
+    right: 0;
+}
+
+.header-right-btn {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.header-right-btn:hover {
+    /*  */
+}
+
+.header-right-btn--actived {
+    transform: rotate(180deg);
+}
+
+.header-right-btn__close {
+    display: none;
+}
+
+.header-right-btn--actived .header-right-btn__close {
+    display: block;
+}
+
+.header-right-btn--actived .header-right-btn__default {
+    display: none;
+}
+
+
+#section-nav {
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.section-nav__btn {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 0 0.2rem black;
+    cursor: pointer;
+    transition: all linear 0.5s;
+}
+
+.section-nav__btn--actived {
+    height: 4rem;
+}
+
+#__section-nav-top,
+#__section-nav-bot {
+    font-size: 2rem;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#__section-nav-top:hover i {
+    position: relative;
+    animation: sectionNavTop linear 1s infinite;
+}
+
+@keyframes sectionNavTop {
+    0% {
+        top: 0rem;
+    }
+    50% {
+        top: -1rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}
+
+#__section-nav-bot:hover i {
+    position: relative;
+    animation: sectionNavBot linear 1s infinite;
+}
+
+@keyframes sectionNavBot {
+    0% {
+        top: 0rem;
+    }
+    50% {
+        top: 1rem;
+    }
+    100% {
+        top: 0rem;
+    }
+}

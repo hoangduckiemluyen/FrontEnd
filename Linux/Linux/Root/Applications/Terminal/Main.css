@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: inherit;
+    font-size: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#____terminal____ {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 4px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.terminal__message {
+    font-weight: normal;
+}
+
+.terminal-commanding {
+    order: 1;
+}
+
+.terminal__user {
+    color: rebeccapurple;
+}
+
+.terminal__dir {
+    color: blue;
+}
+
+.terminal__access {
+    color: green;
+    padding-right: 10px;
+}
+
+.terminal__text {
+    font-weight: normal;
+}
+
+.terminal__text-cursor {
+    display: inline-block;
+    background: black;
+    color: white;
+    animation: identifier linear 1s infinite;
+}
+
+@keyframes identifier {
+    0% {
+        background: black;
+        color: white;
+    }
+    50% {
+        background: white;
+        color: black;
+    }
+    100% {
+        background: black;
+        color: white;
+    }
+}
+
+.terminal-line__text-input {
+    outline: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}

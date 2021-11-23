@@ -1,0 +1,38 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : Libraries.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 00:00
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This file include all sub CSS libraries from ./Libraries/
+*               
+*  --------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------
+Color in use:
+    - Primary background            : #FF9900
+    - Text whith primary background : white (#FFFFFF)
+    - Border                        : #BCD0E5
+    - Logo - Text color             : #173A56
+    - Title and heading color       : #2F281E
+    - Text color                    : #544837
+
+Keyword to find:
+    - Button.
+    - Custom Grid.
+    - Fill color.
+    - Flex box.
+    - Size.
+    - Text.
+---------------------------------------------------------------------------------------- */
+
+
+@import url('./Libraries/Button.css');
+@import url('./Libraries/CustomGrid.css');
+@import url('./Libraries/FillColor.css');
+@import url('./Libraries/Flexbox.css');
+@import url('./Libraries/Size.css');
+@import url('./Libraries/Text.css');

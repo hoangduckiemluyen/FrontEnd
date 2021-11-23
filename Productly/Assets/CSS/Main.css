@@ -1,0 +1,259 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : Common.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 18:18
+*               Last Modified   : 12/11/2021 - 17:17
+*               Descriptions    : This file using for custom CSS elements.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+
+/* --- Begin: Other -----------------------------------------------------------------------*/
+
+#header { height: 78px; }
+
+.pos-relative { position: relative; }
+
+.border { border: 1px solid #BCD0E5; }
+
+.border-top { border-top: 1px solid #BCD0E5; }
+
+/* --- End: Other -------------------------------------------------------------------------*/
+
+/* --- Begin: Custom text -----------------------------------------------------------------*/
+
+.heading.heading-slider {
+    font-size: 44px;
+}
+
+.title.title-marketing-strategies {
+    font-size: 24px;
+}
+
+.title.title-feature {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.text.text-slider {
+    font-size: 18px;
+}
+
+/* --- End: Custom text -------------------------------------------------------------------*/
+
+/* --- Begin: Custom grid gutter size -----------------------------------------------------*/
+
+.gutter-20  { --gutter-size: 20px;  }
+.gutter-30  { --gutter-size: 30px;  }
+.gutter-60  { --gutter-size: 60px;  }
+.gutter-100 { --gutter-size: 100px; }
+
+/* --- End: Custom grid gutter size -------------------------------------------------------*/
+
+/* --- Begin: Custom padding --------------------------------------------------------------*/
+
+.pd100--top     { padding-top: 100px;       }
+.pd100--bottom  { padding-bottom: 100px;    }
+
+/* --- Begin: Custom padding --------------------------------------------------------------*/
+
+/* --- Begin: Custom margin ---------------------------------------------------------------*/
+
+.mg40--top    { margin-top: 40px; }
+.mg70--top    { margin-top: 70px; }
+
+
+.mg10--bottom { margin-bottom: 10px; }
+.mg20--bottom { margin-bottom: 20px; }
+.mg24--bottom { margin-bottom: 24px; }
+.mg30--bottom { margin-bottom: 30px; }
+.mg40--bottom { margin-bottom: 40px; }
+.mg35--bottom { margin-bottom: 35px; }
+.mg38--bottom { margin-bottom: 38px; }
+.mg50--bottom { margin-bottom: 50px; }
+.mg60--bottom { margin-bottom: 60px; }
+.mg90--bottom { margin-bottom: 90px; }
+
+/* --- End: Custom margin -----------------------------------------------------------------*/
+
+/* --- Begin: Special section CSS ---------------------------------------------------------*/
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.feature-icon--7752BE { background: #7752BE; }
+.feature-icon--FAB005 { background: #FAB005; }
+.feature-icon--F03E3D { background: #F03E3D; }
+.feature-icon--4DADF7 { background: #4DADF7; }
+
+.task-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-text {
+    display: inline-flex;
+    width: calc(100% - 45px);
+}
+
+.marketing-trategies-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.marketing-trategies-nav-btn {
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    background: #EFEFEF;
+    margin: 0 5px;
+}
+
+.feature-background {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    width: 100vw;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.answer-question-background {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    width: 100vw;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.footer-input {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* --- End: Special section CSS -----------------------------------------------------------*/
+
+/* --- Begin: Answer question float -------------------------------------------------------*/
+
+#float_1 {
+    top: 150px;
+    left: 50px;
+}
+
+#float_2 {
+    top: 115px;
+    right: 140px;
+}
+
+#float_3 {
+    right: 35px;
+    top: 340px;
+}
+
+#float_4 {
+    right: 300px;
+    top: 480px;
+}
+
+#float_5 {
+    left: 20px;
+    top: 450px;
+}
+
+.answer-question-float {
+    right: 0;
+    display: flex;
+    position: absolute;
+}
+
+.answer-question-float__said {
+    height: 53px;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.answer-question-float__said::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+.answer-question-float__said::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 18px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+#float_1 .answer-question-float__said::before {
+    content: "";
+    left: 35px;
+}
+
+#float_1 .answer-question-float__said::after {
+    content: "";
+    left: 18px;
+}
+
+.answer-question-float__said-text {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: white;
+    padding: 0 26px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.answer-question-float__img-wrap {
+    position: relative;
+}
+
+.answer-question-float__img {
+    position: absolute;
+    top: 80%;
+    right: -60px;
+    width: 98px;
+    height: 98px;
+    border-radius: 100%;
+}
+
+#float_1 .answer-question-float__img {
+    left: -60px;
+    right: unset;
+}
+
+/* --- Begin: Answer question float -------------------------------------------------------*/

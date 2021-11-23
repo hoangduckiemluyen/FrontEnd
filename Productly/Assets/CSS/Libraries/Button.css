@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : Button.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 23:23
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This is Button - CSS Library.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+.btn-seperate {
+    width: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 16px;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn.btn--small {
+    height: 46px;
+    padding: 0 24.28px;
+    font-weight: 600;
+}
+
+.btn.btn--medium {
+    height: 53px;
+    padding: 0 38.0235px;
+    font-weight: 700;
+}
+
+.btn.btn-nav {
+    padding: 0 13px;
+    font-size: 14px;
+    height: 46px;
+    color: #2F281E;
+}
+
+.btn.btn-link {
+    color: #FF9900;
+    font-weight: 600;
+}
+
+.btn.btn-link > i {
+    margin-right: 8px;
+}
+
+.btn.btn-normal {
+    border: 1px solid #BCD0E5;
+}
+
+.btn.btn-primary {
+    background: #FF9900;
+    color: white
+}

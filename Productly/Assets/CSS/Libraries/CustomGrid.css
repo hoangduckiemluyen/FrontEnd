@@ -1,0 +1,54 @@
+/* ---------------------------------------------------------------------------------------
+*
+*                               FIGMA TO HTML - PROJECT
+*                           ===================================
+*               File name       : CustomGrid.css
+*               File Type       : Cascading Stylesheet
+*               Author          : undefined
+*               Created         : 11/11/2021 - 23:23
+*               Last Modified   : 11/11/2021 - 00:00
+*               Descriptions    : This is custom grid - CSS Library.
+*               
+*  --------------------------------------------------------------------------------------- */
+
+:root {
+    --gutter-size: 0;
+
+    --col-size-1: 8.333334%;
+    --col-size-2: 16.666667%;
+    --col-size-3: 25%;
+    --col-size-4: 33.333334%;
+    --col-size-5: 41.666667%;
+    --col-size-6: 50%;
+    --col-size-7: 58.333334%;
+    --col-size-8: 66.666667%;
+    --col-size-9: 75%;
+    --col-size-10: 83.333334%;
+    --col-size-11: 91.666667%;
+    --col-size-12: 100%;
+}
+
+.row {
+    display: flex;
+    margin-left: calc(var(--gutter-size) / -2);
+    margin-right: calc(var(--gutter-size) / -2);
+}
+
+.row > .col {
+    padding-left: calc(var(--gutter-size) / 2);
+    padding-right: calc(var(--gutter-size) / 2);
+}
+
+.l-c-0  { display: none;                }
+.l-c-1  { width: var(--col-size-1);     }
+.l-c-2  { width: var(--col-size-2);     }
+.l-c-3  { width: var(--col-size-3);     }
+.l-c-4  { width: var(--col-size-4);     }
+.l-c-5  { width: var(--col-size-5);     }
+.l-c-6  { width: var(--col-size-6);     }
+.l-c-7  { width: var(--col-size-7);     }
+.l-c-8  { width: var(--col-size-8);     }
+.l-c-9  { width: var(--col-size-9);     }
+.l-c-10 { width: var(--col-size-10);    }
+.l-c-11 { width: var(--col-size-11);    }
+.l-c-12 { width: var(--col-size-12);    }

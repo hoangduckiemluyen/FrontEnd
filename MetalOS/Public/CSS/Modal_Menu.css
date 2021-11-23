@@ -1,0 +1,137 @@
+#modal-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.menu {
+    z-index: 0;
+}
+
+.menu-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.menu-background__state {
+    height: 33.33334%;
+    background: rgba(20, 20, 20, 1);
+    position: relative;
+}
+
+.menu-background__state:nth-child(1) {
+    float: right;
+    width: 0;
+}
+
+.menu-background__state:nth-child(2) {
+    float: left;
+    width: 0;
+}
+
+.menu-background__state:nth-child(3) {
+    float: right;
+    width: 0;
+}
+
+
+.menu-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.menu-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.menu-main-content__link {
+    font-size: 3rem;
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.menu-main-footer {
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 1rem white;
+}
+
+
+
+/* control */
+
+.menu--actived {
+    z-index: 20;
+}
+
+.menu--actived .menu-background {
+    background: rgba(20, 20, 20, 1);
+    transition: background 0s;
+    transition-delay: 1.4s;
+}
+
+.menu--actived .menu-background__state:nth-child(1) {
+    float: right;
+    width: 100%;
+    transition: width ease 0.5s;
+}
+
+.menu--actived .menu-background__state:nth-child(2) {
+    float: left;
+    width: 100%;
+    transition: width ease 0.5s;
+    transition-delay: 0.5s;
+}
+
+.menu--actived .menu-background__state:nth-child(3) {
+    float: right;
+    width: 100%;
+    transition: width ease 0.5s;
+    transition-delay: 1s;
+}
+
+
+.menu--actived .menu-main-header {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all linear 0.5s;
+    transition-delay: 1.5s;
+}
+
+
+.menu--actived .menu-main {
+    opacity: 1;
+    transition: all linear 1s;
+    transition-delay: 1.5s;
+}
+
+.menu--actived .menu-main-footer {
+    text-shadow: none;
+    transition: text-shadow linear 0.5s;
+    transition-delay: 3.5s;
+}

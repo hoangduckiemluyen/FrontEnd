@@ -1,0 +1,87 @@
+/*==================================================================*\
+||                                                                  ||
+||  Project     : Coding Cat - Travel                               ||
+||  File name   : Modal.css                                         ||
+||  File type   : Cascading Stylesheet                              ||
+||  Size (line) :                                                   ||
+||  Author      : Hoang Duc Kiem Luyen                              ||
+||  Created on  : 29/04/2021 | 14:41                                ||
+||  Copyright   : Coding Cat                                        ||
+||  Description : This is modal css file                            ||
+||                                                                  ||
+\*==================================================================*/
+
+
+/*========================== Begin: CODE ============================*/
+
+#application__modal-visible {
+    display: none;
+}
+
+#application__modal-visible:checked ~ #application__modal{
+    display: flex;
+}
+
+#application__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: modal_Intro linear 0.3s both;
+}
+
+@keyframes modal_Intro {
+    0% {opacity: 0;} 100% {opacity: 1;}
+}
+
+.modal-content {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    animation: modalContent_Intro linear 0.3s both;
+}
+
+@keyframes modalContent_Intro {
+    0% {transform: scale(0);} 100% {transform: scale(100%);}
+}
+
+.modal-content__close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    animation: closeBtn_Outro linear 0.3s;
+    cursor: pointer;
+}
+
+.modal-content__close i {
+    color: white;
+    font-size: 2rem;
+}
+
+.modal-content__close:hover{
+    animation: closeBtn_Intro linear 0.3s;
+    
+}
+
+@keyframes closeBtn_Intro {
+    0% {transform: rotate(0);} 100% {transform: rotate(90deg);}
+}
+
+@keyframes closeBtn_Outro {
+    0% {transform: rotate(90deg);} 100% {transform: rotate(0);}
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*========================== End: CODE ============================*/

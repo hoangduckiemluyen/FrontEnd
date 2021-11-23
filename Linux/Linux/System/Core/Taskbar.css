@@ -1,0 +1,151 @@
+/*=== Begin: Favorite ===============================*/
+
+#____favorite____ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: rgba(5, 5, 5, 0.7);
+
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+    transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+}
+
+#____taskbar____ {
+    flex: 1;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px;
+    min-height: 60%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+#____taskbar_list____ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.__system_task {
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    display: none;
+    align-items: stretch;
+    cursor: pointer;
+}
+
+.__system_task::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.__system_task.pinned {
+    display: flex;
+}
+
+.__system_task:hover {
+    background-color: rgba(199, 199, 199, 0.1);
+}
+
+.__system_task.actived, 
+.__system_task.actived:hover {
+    background-color: rgba(167, 167, 167, 0.4);
+}
+
+.__system_task.opened {
+    display: flex;
+}
+
+.__system_task.opened .__system_task__dot {
+    background-color: rgb(255, 81, 0);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.__system_task__img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 5px;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center;
+}
+
+#____applist_level____ {
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#____applist_level____::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+#____applist_level____:hover {
+    background-color: rgba(199, 199, 199, 0.1);
+}
+
+#____applist_level____.actived, 
+#____applist_level____.actived:hover {
+    background-color: rgba(167, 167, 167, 0.4);
+}
+
+#____applist_level____ > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+
+/*=== End: Favorite ===============================*/

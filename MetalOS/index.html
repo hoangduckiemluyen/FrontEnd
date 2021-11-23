@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal OS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./Public/FONTS/ThemifyIcon/themify-icons/themify-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Public/CSS/Core.css">
+    <link rel="stylesheet" href="./Public/CSS/Main.css">
+    <link rel="stylesheet" href="./Public/CSS/Contents.css">
+    <link rel="stylesheet" href="./Public/CSS/Modal_Menu.css">
+    <link rel="stylesheet" href="./Public/CSS/Modal_Welcome.css">
+
+    <link rel="stylesheet" href="./Public/CSS/Contents/Intro.css">
+    <link rel="stylesheet" href="./Public/CSS/Contents/Platform.css">
+    <link rel="stylesheet" href="./Public/CSS/Contents/Develop.css">
+    <link rel="stylesheet" href="./Public/CSS/Contents/Project.css">
+    <link rel="stylesheet" href="./Public/CSS/Contents/Community.css">
+    <link rel="stylesheet" href="./Public/CSS/Grid.css">
+</head>
+<body>
+    <div id="application" class="grid">
+        <!--==== Begin: Header ============================================-->
+        <div id="header" class="row">
+            <div class="header-left col l-c-2 m-c-2 s-c-3"> 
+                <div class="header-left__img">METAL OS</div>
+            </div>
+            <div class="s-c-6"></div>
+            <div id="__header-nav" class="header-center col l-c-8 m-c-8 s-c-0">
+                <div class="header-center__nav header-center__nav--actived">Mở đầu</div>
+                <div class="header-center__nav">Nền tảng</div>
+                <div class="header-center__nav">Sự phát triển</div>
+                <div class="header-center__nav">Dự án</div>
+                <div class="header-center__nav">Cộng đồng</div>
+            </div>
+            <div class="header-right col l-c-2 m-c-2 s-c-3">
+                <div id="__menu-btn" class="header-right-btn">
+                    <i class="header-right-btn__default ti-menu"></i>
+                    <i class="header-right-btn__close ti-close"></i>
+                </div>
+            </div>
+        </div>
+        <!--==== End: Header ============================================-->
+
+        <!--==== Begin: Container ============================================-->
+        <div id="container">
+
+            <!--==== Begin: Container -> Intro ===========================-->
+            <div class="section">
+                <!--==== Begin: Container -> Intro -> Shadow ====================-->
+                <video src="./Public/MEDIA/VIDEOS/intro.mp4" autoplay loop muted class="section-video"></video>
+                <div class="section-shadow--left">
+                    <div class="section-shadow--left-main1"></div>
+                    <div class="section-shadow--left-main2"></div>
+                </div>
+                <!--==== End: Container -> Intro -> Shadow ====================-->
+
+                <!--==== Begin: Container -> Intro -> Container ====================-->
+                <div class="row section-container">
+
+                    <!--==== Begin: Container -> Intro -> Container -> Desc ====-->
+                    <div class="section-desc col l-c-8 m-c-10 s-c-12">
+                        <div class="section-desc__title">Bản phân phối Linux đa nền tảng</div>
+                        <div class="section-desc__content">
+                            Metal OS là một bản phân phối linux cho phép người dùng sử dụng nó trên nhiều nền tảng khác nhau.
+                            Được phát triển dựa trên HTML, CSS và Javascript,
+                            Metal OS được cộng đồng mạng công nhận là một phiên bản Linux siêu nhẹ và siêu cơ động.
+                            Không cần dùng đến máy ảo hay cài đặt phức tạp, 
+                            chỉ cần chạy ứng dụng trình duyệt và sau đó là mở nó lên.
+                        </div>
+                        <a href="" class="section-desc__btn">Trải nghiệm Metal OS trực tuyến</a>
+                    </div>
+                    <!--==== End: Container -> Intro -> Container -> Desc ====-->
+
+                </div>
+                <!--==== End: Container -> Intro -> Container ====================-->
+
+            </div>
+            <!--==== End: Container -> Intro ===========================-->
+
+            <!--==== Begin: Container -> Platform ===========================-->
+            <div class="section" style="background: url('./Public/MEDIA/IMGS/Platform.old.webp');"> 
+
+                <!--==== Begin: Container -> Platform -> Shadow ====================-->
+                <div class="section-shadow--right">
+                    <div class="section-shadow--right-main1"></div>
+                    <div class="section-shadow--right-main2"></div>
+                </div>
+                <!--==== End: Container -> Platform -> Shadow ====================-->
+
+                <!--==== Begin: Container -> Platform -> Container ====================-->
+                <div class="row section-container">
+
+                    <!--==== Begin: Container -> Platform -> Container -> content ====-->
+                    <div class="section-content col l-c-6 m-c-10 s-c-12">
+                        <div class="section-content__platform">
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Windows.png');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Windows</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Linux.ico');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Linux</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/FireFox.png');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Browser</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Android.ico');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Android</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Apple.png');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Apple</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==== End: Container -> Platform -> Container -> content ====-->
+                    
+                    <!--==== Begin: Container -> Platform -> Container -> desc ====-->
+                    <div class="section-desc col l-c-6 m-c-10 s-c-12">
+                        <div class="section-desc__title">Hỗ trợ nhiều nền tảng</div>
+                        <div class="section-desc__content">
+                            Giống như khẩu hiệu của ngôn ngữ lập trình Java:
+                            "Viết một lần, chạy mọi nơi". 
+                            Metal OS là một bản phân phối linux cho phép người 
+                            dùng sử dụng nó trên nhiều nền tảng khác nhau.
+                        </div>
+                        <div class="section-desc__btn">Thông tin chi tiết</div>
+                    </div>
+                    <!--==== End: Container -> Platform -> Container -> desc ====-->
+
+                </div>
+                <!--==== End: Container -> Platform -> Container ====================-->
+                
+            </div>
+            <!--==== End: Container -> Platform ===========================-->
+
+            <!--==== Begin: Container -> Develop ===========================-->
+            <div class="section" style="background: url('./Public/MEDIA/IMGS/Develop.jpg');">
+
+                <!--==== Begin: Container -> Develop -> Shadow ====================-->
+                <div class="section-shadow--left">
+                    <div class="section-shadow--left-main1"></div>
+                    <div class="section-shadow--left-main2"></div>
+                </div>
+                <!--==== End: Container -> Develop -> Shadow ====================-->
+
+                <!--==== Begin: Container -> Develop -> Container ====================-->
+                <div class="row section-container">
+
+                    <!--==== Begin: Container -> Develop -> Container -> desc ====-->
+                    <div class="section-desc col l-c-6 m-c-10 s-c-12">
+                        <div class="section-desc__title">Các phần mở rộng và bổ sung mới nhất</div>
+                        <div class="section-desc__content">
+                            Trải nghiệm của người dùng là tiêu chí hàng đầu của chúng tôi, vì vậy
+                            chúng tôi không ngừng phát triển để mang lại các khả năng và cải tiến mới cho hệ điều hành.
+                            Dưới đây là một số phát triển gần đây nhất
+                        </div>
+                        <a href="" class="section-desc__btn">Thông tin chi tiết</a>
+                    </div>
+                    <!--==== End: Container -> Develop -> Container -> desc ====-->
+
+                    <!--==== Begin: Container -> Develop -> Container -> content ====-->
+                    <div class="section-content col l-c-6 m-c-10 s-c-12">
+                        <div class="section-content__develop">
+                            <div class="section-content__develop-nav section-content__develop-nav--actived">
+                                <div class="section-content__develop-nav-title">
+                                    <span>Video - Bản phát hành tạm thời</span>
+                                    <i class="ti-angle-right section-content__develop-nav-icon--deactived"></i>
+                                    <i class="ti-angle-down section-content__develop-nav-icon--actived"></i>
+                                </div>
+                                <div class="section-content__develop-nav-list">
+                                    <div class="section-content__develop-nav-item">Blog thông số tạm thời</div>
+                                    <div class="section-content__develop-nav-item">Bản phát hành tạm thời</div>
+                                    <div class="section-content__develop-nav-item">Metal OS C++</div>
+                                    <div class="section-content__develop-nav-item">Metal OS Portable</div>
+                                </div>
+                            </div>
+                            
+                            <div class="section-content__develop-nav">
+                                <div class="section-content__develop-nav-title">
+                                    <span>Các ứng dụng mặc định</span>
+                                    <i class="ti-angle-right section-content__develop-nav-icon--deactived"></i>
+                                    <i class="ti-angle-down section-content__develop-nav-icon--actived"></i>
+                                </div>
+                                <div class="section-content__develop-nav-list">
+                                    <div class="section-content__develop-nav-item">Terminal</div>
+                                    <div class="section-content__develop-nav-item">Visual Studio</div>
+                                    <div class="section-content__develop-nav-item">Ứng dụng trình duyệt</div>
+                                    <div class="section-content__develop-nav-item">Ứng dụng nghe nhạc</div>
+                                    <div class="section-content__develop-nav-item">Ứng dụng xem video</div>
+                                </div>
+                            </div>
+
+                            <div class="section-content__develop-nav">
+                                <div class="section-content__develop-nav-title">
+                                    <span>Đồng bộ hóa</span>
+                                    <i class="ti-angle-right section-content__develop-nav-icon--deactived"></i>
+                                    <i class="ti-angle-down section-content__develop-nav-icon--actived"></i>
+                                </div>
+                                <div class="section-content__develop-nav-list">
+                                    <div class="section-content__develop-nav-item">Khả năng đọc - ghi</div>
+                                    <div class="section-content__develop-nav-item">Xem thông tin phần cứng</div>
+                                    <div class="section-content__develop-nav-item">Hiệu xuất và đo đạc</div>
+                                    <div class="section-content__develop-nav-item">Tải và cài đặt ứng dụng</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==== End: Container -> Develop -> Container -> content ====-->
+
+                </div>
+                <!--==== Begin: Container -> Develop -> Container ====================-->
+
+            </div>
+            <!--==== End: Container -> Develop ===========================-->
+
+            <!--==== Begin: Container -> Project ===========================-->
+            <div class="section" style="background: url('./Public/MEDIA/IMGS/Project.jpg');">
+
+                <!--==== Begin: Container -> Project -> Shadow ====================-->
+                <div class="section-shadow--right">
+                    <div class="section-shadow--right-main1"></div>
+                    <div class="section-shadow--right-main2"></div>
+                </div>
+                <!--==== End: Container -> Project -> Shadow ====================-->
+
+                <!--==== Begin: Container -> Project -> container ====================-->
+                <div class="row section-container">
+
+                    <!--==== Begin: Container -> Project -> Container -> content ====-->
+                    <div class="section-content col l-c-6 m-c-10 s-c-12">
+                        <div class="section-content__project">
+                            <div class="section-content__project-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Linux.ico');" class="section-content__project-item-img"></div>
+                                <div class="section-content__project-item-title">Metal OS - C/C++</div>
+                            </div>
+                            <div class="section-content__project-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Windows.png');" class="section-content__project-item-img"></div>
+                                <div class="section-content__project-item-title">Fake Windows</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==== End: Container -> Project -> Container -> content ====-->
+
+                    <!--==== Begin: Container -> Project -> Container -> desc ====-->
+                    <div class="section-desc col l-c-6 m-c-10 s-c-12">
+                        <div class="section-desc__title">Các dự án liên quan</div>
+                        <div class="section-desc__content">
+                            Bên cạnh việc phát triển và nâng cấp Metal OS, 
+                            chúng tôi còn phát triển thêm các dự án khác. 
+                            Hai trong số đó là "Fake windows" hay còn gọi là Windows nhái 
+                            để phục vụ cho mục đích giải trí và "Metal OS - C/C++" 
+                            với mục đích làm cho các ứng dụng có thể đạt hiệu suất tối đa.
+                        </div>
+                        <div class="section-desc__btn">Thông tin chi tiết</div>
+                    </div>
+                    <!--==== End: Container -> Project -> Container -> desc ====-->
+                    
+                </div>
+                <!--==== End: Container -> Project -> container ====================-->
+
+            </div>
+            <!--==== End: Container -> Project ===========================-->
+
+            <!--==== Begin: Container -> Community ===========================-->
+            <div class="section" style="background: url('./Public/MEDIA/IMGS/Community.jpg');">
+
+                <!--==== Begin: Container -> Project -> Shadow ====================-->
+                <div class="section-shadow--arround">
+                    <div class="section-shadow--arround-tl"></div>
+                    <div class="section-shadow--arround-tr"></div>
+                    <div class="section-shadow--arround-bl"></div>
+                    <div class="section-shadow--arround-br"></div>
+                </div>
+                <!--==== End: Container -> Project -> Shadow ====================-->
+
+                <!--==== Begin: Container -> Project -> container ====================-->
+                <div class="section-container justify-center">
+
+                    <!--==== Begin: Container -> Project -> Container -> desc ====-->
+                    <div class="section-desc text-center l-c-8 m-c-10 s-c-12">
+                        <div class="section-desc__title">Tham gia cộng đồng của chúng tôi</div>
+                        <div class="section-desc__content">
+                            Có một số cách để theo dõi những phát triển mới nhất của Metal OS, 
+                            trả lời câu hỏi và đưa ra đề xuất để cải thiện.
+                            Bạn sẽ tìm thấy các cuộc thảo luận của cộng đồng Metal OS 
+                            sôi nổi trên một số diễn đàn và nền tảng truyền thông xã hội bên dưới. 
+                            Đó là một cách tuyệt vời để tham gia!
+                        </div>
+                    </div>
+                    <!--==== End: Container -> Project -> Container -> desc ====-->
+
+                    <!--==== Begin: Container -> Project -> Container -> content ====-->
+                    <div class="section-content text-center l-c-8 m-c-10 s-c-12">
+                        <div class="section-content__community">
+                            <a href="https://www.facebook.com/hoangduckiemluyen/" target="_blank" class="section-content__community-link">
+                                <i class="ti-facebook section-content__community-icon"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hoangduckiemluyen/" target="_blank" class="section-content__community-link">
+                                <i class="ti-instagram section-content__community-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCSZNirqomCi682-V4lKheZw" target="_blank" class="section-content__community-link">
+                                <i class="ti-youtube section-content__community-icon"></i>
+                            </a>
+                            <a href="https://twitter.com/kiemluyen" target="_blank" class="section-content__community-link">
+                                <i class="ti-twitter section-content__community-icon"></i>
+                            </a>
+                            <a href="https://github.com/hoangduckiemluyen" target="_blank" class="section-content__community-link">
+                                <i class="ti-github section-content__community-icon"></i>
+                            </a>
+                            <a href="https://skype.com/" target="_blank" class="section-content__community-link">
+                                <i class="ti-skype section-content__community-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==== End: Container -> Project -> Container -> content ====-->
+
+                </div>
+                <!--==== End: Container -> Project -> container ====================-->
+
+            </div>
+            <!--==== End: Container -> Community ===========================-->
+            
+            <!--==== Begin: Container -> Footer ===========================-->
+            <!-- <div class="section" style="background: url('./Public/MEDIA/IMGS/Project.jpg.jpg');">
+                <div class="section-shadow--arround">
+                    <div class="section-shadow--arround-tl"></div>
+                    <div class="section-shadow--arround-tr"></div>
+                    <div class="section-shadow--arround-bl"></div>
+                    <div class="section-shadow--arround-br"></div>
+                </div>
+                <div class="row section-container">
+                    
+
+                    <div class="section-content col l-c-6 m-c-10 s-c-12">
+                        <div class="section-content__platform">
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Windows.png');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Windows</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Linux.ico');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Linux</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/FireFox.png');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Browser</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Apple.png');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Apple</div>
+                            </div>
+                            <div class="section-content__platform-item">
+                                <div style="background: url('./Public/MEDIA/IMGS/Platform/Android.ico');" class="section-content__platform-img"></div>
+                                <div class="section-content__platform-desc">Android</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-desc col l-c-6 m-c-10 s-c-12">
+                        <div class="section-desc__title">Hỗ trợ nhiều nền tảng</div>
+                        <div class="section-desc__content">
+                            Giống như khẩu hiệu của ngôn ngữ lập trình Java:
+                            "Viết một lần, chạy mọi nơi". 
+                            Metal OS là một bản phân phối linux cho phép người 
+                            dùng sử dụng nó trên nhiều nền tảng khác nhau.
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+            <!--==== End: Container -> Footer ===========================-->
+            
+        </div>
+        <!--==== End: Container ============================================-->
+
+        <!--==== Begin: Main control ============================================-->
+        <div id="section-nav">
+            <div id="__section-nav-top">
+                <i class="ti-angle-double-up"></i>
+            </div>
+
+            <div class="section-nav__btn section-nav__btn--actived"></div>
+            <div class="section-nav__btn"></div>
+            <div class="section-nav__btn"></div>
+            <div class="section-nav__btn"></div>
+            <div class="section-nav__btn"></div>
+            <!-- <div class="section-nav__btn"></div> -->
+
+            <div id="__section-nav-bot">
+                <i class="ti-angle-double-down"></i>
+            </div>
+        </div>
+        <!--==== End: Main control ============================================-->
+
+        <!--==== Begin: Modal menu ============================================-->
+        <div id="modal-menu" class="menu">
+            <div class="menu-background">
+                <div class="menu-background__state"></div>
+                <div class="menu-background__state"></div>
+                <div class="menu-background__state"></div>
+            </div>
+            <div class="menu-main">
+                <div class="menu-main-content">
+                    <a href="" class="menu-main-content__link">
+                        GIỚI THIỆU NGUỒN CẤP DỮ LIỆU
+                    </a>
+                    <a href="" class="menu-main-content__link">
+                        ỨNG DỤNG NGUỒN CẤP DỮ LIỆU
+                    </a>
+                    <a href="" class="menu-main-content__link">
+                        GẶP GỠ ĐỘI
+                    </a>
+                    <a href="" class="menu-main-content__link">
+                        SẮP XẾP MỘT CUỘC HỌP
+                    </a>
+                </div>
+                <div class="menu-main-footer">
+                    Thiết kế bởi <b>Hoàng Đức Kiếm Luyện</b>
+                </div>
+            </div>
+        </div>
+        <!--==== End: Modal menu ============================================-->
+
+        <!--==== End: Modal welcome ============================================-->
+        <!-- <div id="modal-welcome">
+            <div class="welcome-main"></div>
+        </div> -->
+        <!--==== End: Modal welcome ============================================-->
+
+    </div>
+
+    <script src="./Public/JS/Application.js"></script>
+</body>
+</html>

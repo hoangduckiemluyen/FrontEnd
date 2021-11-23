@@ -1,0 +1,90 @@
+/*==================================================================*\
+||                                                                  ||
+||  Project     : Coding Cat - Travel                               ||
+||  File name   : Services.css                                      ||
+||  File type   : Cascading Style Sheet                             ||
+||  Size (line) :                                                   ||
+||  Author      : Hoang Duc Kiem Luyen                              ||
+||  Created on  : 26/04/2021 | 12:30                                ||
+||  Copyright   : Coding Cat                                        ||
+||  Description : This is Content css file                          ||
+||                                                                  ||
+\*==================================================================*/
+
+
+/*========================== Begin: CODE ============================*/
+
+.content-services__sub-heading {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.content-services__heading {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+}
+
+.content-services__heading > span{
+    font-size: 4rem;
+    color: white;
+    line-height: 2rem;
+    display: inline-block;
+    border-bottom: 0.5rem solid #f3a46b;
+}
+
+.content-services__list {
+    padding-bottom: 5rem;
+}
+
+.content-services__item {
+    display: flex;
+}
+
+.content-services__item-img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.content-services__item-wrap {
+    flex: 1;
+}
+
+.content-services__item-heading {
+    font-size: 2.4rem;
+    height: 5rem;
+    display: flex;
+    color: white;
+
+}
+
+.content-services__item-content {
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+}
+
+.content-services__item-btn {
+    margin-top: 2.5rem;
+    background: #1bbc9b;
+    color: white
+}
+
+.content-services__item-btn {
+    margin-top: 2.5rem;
+    
+    color: white
+}
+
+
+
+/*========================== End: CODE ============================*/
+

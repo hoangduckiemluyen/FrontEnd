@@ -1,0 +1,220 @@
+/*==================================================================*\
+||                                                                  ||
+||  Project     : Coding Cat - Travel                               ||
+||  File name   : Header.css                                        ||
+||  File type   : Cascading Stylesheet                              ||
+||  Size (line) :                                                   ||
+||  Author      : Hoang Duc Kiem Luyen                              ||
+||  Created on  : 26/04/2021 | 12:30                                ||
+||  Copyright   : Coding Cat                                        ||
+||  Description : This is Header css file                           ||
+||                                                                  ||
+\*==================================================================*/
+
+
+/*========================== Begin: CODE ============================*/
+
+#application__header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    z-index: 30;
+    user-select: none;
+}
+
+.header-wrap {
+    height: var(--header-child-height);
+}
+
+.header-left__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.header-left__link-logo {
+    height: 100%;
+}
+
+/* navigation */
+
+.header-center__list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-center__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-center__item:hover .header-center__item-sub-list {
+    display: block;
+    animation: subNav_Intro linear 0.3s both;
+}
+
+.header-center__link {
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.header-center__btn {
+    padding: 0.0 2rem;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: #f3a46b;
+    border-radius: 2rem;
+    color: white;
+}
+
+/* sub navigation*/
+
+.header-center__item-sub-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    background: white;
+    min-width: 20rem;
+    padding-top: 2rem;
+    display: none;
+    transform-origin: top;
+    box-shadow: 0 0 1rem #fff;
+}
+
+.header-center__item-sub-item {
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    display: flex;
+    line-height: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.header-center__item-sub-item:hover {
+    background: #f1f1f1;
+}
+
+.header-center__item-sub-item:hover .header-center__item-sub-item-sub-list {
+    display: block;
+    animation: subsubNav_Intro linear 0.3s both;
+}
+
+.header-center__item-sub-item > a {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+}
+
+.header-center__item-sub-item > a > i {
+    font-size: 1rem;
+}
+
+.header-center__item-sub-hot,
+.header-center__item-sub-new,
+.header-center__item-sub-best {
+    font-size: 1.4rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 0.8rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.header-center__item-sub-hot {
+    background: #f76570;
+}
+
+.header-center__item-sub-new {
+    background: #1bbc9b;
+}
+
+.header-center__item-sub-best {
+    background: #14d9b5;
+}
+
+@keyframes subNav_Intro {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes subNav_Outro {
+    from {
+        transform: scaleY(100%);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+/* sub of sub navigation*/
+
+.header-center__item-sub-item-sub-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    z-index: 20;
+    background: white;
+    min-width: 20rem;
+    transform-origin: top left;
+    display: none;
+}
+
+.header-center__item-sub-item-sub-item {
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    display: flex;
+    line-height: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header-center__item-sub-item-sub-item:hover {
+    background: #f1f1f1;
+}   
+
+@keyframes subsubNav_Intro {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(100%);
+    }
+}
+
+@keyframes subsubNav_Outro {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+
+/*========================== End: CODE ============================*/

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Cat - Linux</title>
+
+    <!-- <link rel="shortcut icon" href="./Root/Favicons/Favicon_1.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="./Linux/System/Core/FontAwesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./Linux/System/Core/FontAwesome/css/regular.min.css">
+    <link rel="stylesheet" href="./Linux/System/Core/FontAwesome/css/solid.min.css">
+
+    <link rel="stylesheet" href="./Linux/System/Core/FontUbuntu/Ubuntu-Bold.ttf">
+
+    <link rel="stylesheet" href="./Linux/System/Core/Screen.css">
+    
+    <link rel="stylesheet" href="./Linux/System/Core/AppList.css">
+    <link rel="stylesheet" href="./Linux/System/Core/Desktop.css">
+    <link rel="stylesheet" href="./Linux/System/Core/AllWindows.css">
+    <link rel="stylesheet" href="./Linux/System/Core/SystemControl.css">
+    <link rel="stylesheet" href="./Linux/System/Core/Taskbar.css">
+    <link rel="stylesheet" href="./Linux/System/Core/Notification.css">
+
+    <link rel="stylesheet" href="./Linux/System/Core/Grid.css">
+
+    <style>
+        #____main____ {
+            background: url('./Linux/Root/Backgrounds/Windows10.png');
+        }
+    </style>
+</head>
+<body>
+    <div id="____screen____">
+        <div id="____statusbar____">
+            <div class="l-c-4 m-c-4 s-c-4">
+                <div id="____activities_level____">
+                    <i class="fas fa-gem"></i> 
+                    <span>Activities</span>
+                </div>
+            </div>
+            <div class="l-c-4 m-c-4 s-c-4">
+                <div id="____notification_level____">
+                    <span id="____date_time____"></span>
+                </div>
+            </div>
+            <div class="l-c-4 m-c-4 s-c-4">
+                <div id="____system_control_level____">
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div id="____main____">
+            <div id="____favorite____">
+                <div id="____taskbar____">
+                    <div id="____taskbar_list____"></div>
+                </div>
+                <div id="____applist_level____"><i class="fas fa-th"></i></div>
+            </div>
+            
+            <div id="____desktop____"></div>
+
+            <div id="____all_windows____">
+                <!-- <label for="____application_0____" class="__system_all_windows_frame">
+                    <div class="__system_all_windows_frame__title">
+                        <div class="__system_all_windows_frame__title_text">Application</div>
+                    </div>
+                    <label class="__system_all_windows_frame__close"><i class="fas fa-times"></i></label>
+                    <div class="__system_all_windows_frame__content"></div>
+                </label> -->
+            </div>
+
+            <div id="____applist____">
+                <div id="____applist_list____"></div>
+            </div>
+        </div>
+
+        <div id="____notification____">
+            <div class="l-c-4 m-c-6 s-c-12">
+                <h2 style="text-align: center; padding: 20px 0;"> Tính năng này đang được phát triển.</h2>
+            </div>
+        </div>
+
+        <div id="____system_control____" class="l-c-4 m-c-6 s-c-12">
+
+            <h2 style="text-align: center; padding: 20px 0; color: white;"> Tính năng này đang được phát triển.</h2>
+            <!-- Volume: <input type="range" checked="false" id="range-master-volume">
+            Brightness: <input type="range" value="100" name="" id="range-brightness"> -->
+        </div>
+
+        <div class="alert-mobile">
+            <div class="alert-mobile__text">
+                <h1>Chưa hỗ  tỉ lệ màn hình này :(</h1>
+                Ứng dụng của chúng tôi hiện chưa hỗ trợ sử dụng trên các thiết bị có màn hình nhỏ, xin vui lòng sử dụng máy tính bảng hoặc các thiết bị có tỉ lệ màn hình lớn hơn.
+                <br><br>Tuy nhiên, bạn có thể thử  xoay ngang màn hình điện thoại của bạn.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="./Linux/System/Process/____Core____.js"></script>
+    <script src="./Linux/System/Process/Common.js"></script>
+    <script src="./Linux/System/Process/SystemControl.js"></script>
+    
+    <script src="./Linux/System/Process/Frame.js"></script>
+    <script src="./Linux/System/Process/Application.js"></script>
+    <script src="./Linux/System/Process/Applist.js"></script>
+</body>
+</html>

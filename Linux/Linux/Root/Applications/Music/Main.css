@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#application {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    color: rgb(0, 0, 0);
+}
+
+.playlist {
+    flex: 1;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    border-left: 1px solid black;
+    padding: 20px;
+}
+
+.title {
+
+}
+
+.img {
+    flex: 1;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    transition: transform linear 0.2s;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.range-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex: 1;
+}
+
+.range-time__number {
+    
+}
+
+.range-time__range {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.range-volume {
+    display: flex;
+    justify-content: flex-end;
+    width: 20px;
+    transition: all linear 0.3s;
+}
+
+.range-volume input {
+    width: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.range-volume--actived {
+    width: 100px;
+}
+
+.range-volume--actived input {
+    flex: 1;
+    opacity: 1;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls__button {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#__control-pause {
+    display: none;
+}
+
+.controls__button:hover,
+.range-volume:hover {
+    text-shadow: 0 0 3px black;
+}
+
+.controls__button:active,
+.range-volume:active {
+    color: red;
+    text-shadow: 0 0 3px red;
+}
+
+.controls__button--actived,
+.range-volume--actived {
+    color: red;
+    text-shadow: 0 0 3px red;
+}

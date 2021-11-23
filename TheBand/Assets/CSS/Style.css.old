@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=======  Begin : *  ========*/
+.clear {
+    clear:both;
+}
+
+.font-30 {
+    font-size : 30px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+.mt30 {
+    margin-top: 30px !important;
+}
+
+.mt16 {
+
+    margin-top: 16px !important;
+}
+
+.mt15 {
+    margin-top: 15px !important;
+}
+
+.mt8 {
+    margin-top: 8px !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.justify {
+    text-align: justify !important;
+}
+
+.bcenter {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.color-grey {
+    color: grey !important;
+}
+
+.bcolor-black {
+    background: black !important;
+}
+
+.bcolor-white {
+    background: #fff !important;
+}
+
+.pd15 {
+    padding: 15px;
+}
+
+.op0-6 {
+    opacity: 0.4;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* col and row */
+
+.col {
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.col-double {
+    width: calc(100% / 2);
+}
+
+.col-triple {
+    width: calc(100% / 3);
+    
+}
+
+.col-full {
+    width: 100%;
+}
+
+.row {
+    
+    margin-right: -9px;
+    margin-left: -9px;
+}
+
+.row::after {
+    
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.btn {
+    line-height: 32px;
+    padding: 0 16px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/*=======  End : *  ========*/
+
+html {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Begin: Header */
+#header {
+    height: 46px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+#header .nav {
+    display: inline-block;
+}
+
+#header .nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#header .nav >li > a {
+    display: block;
+    padding: 0 24px;
+    line-height: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#header .nav > li:hover > a {
+    color: #000;
+    background: #ccc;
+}
+
+#header .nav li:hover .sub-nav {
+    display: block;
+}
+
+#header .sub-nav {
+    width: 200px;
+    background: white;
+    display: none;
+    box-shadow: 0px 4px 10px 0 rgb(0 0 0 / 24%);
+    position: absolute;
+}
+
+#header .sub-nav li {
+    display: block;
+}
+
+#header .sub-nav a {
+    color: black;
+    line-height: 32px;
+    padding: 0 16px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#header .sub-nav li:hover a {
+    background: #ccc;
+}
+
+#header .header-search {
+    width: 46px;
+    height: 46px;
+    float: right;
+}
+
+#header .header-search a {
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#header .header-search:hover a {
+    background-color: red;
+}
+
+/* End: Header */
+
+
+#slider {
+    padding-top: 50%;
+    width: 100%;
+    position:relative;
+    background: url('/Assets/IMG/Sliders/Slider_1.jpg') top center / cover no-repeat;
+}
+
+#slider .slider-content {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+#slider .slider-content h3 {
+    font-size : 24px;
+    color: white;
+    text-align: center;
+}
+
+#slider .slider-content p {
+    margin-top: 30px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*========  Begin: Content  ========*/
+
+#content .content-frames {
+    padding: 65px 15px 112px;
+    width: 800px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+#content .title-frames {
+    letter-spacing: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+
+#content .sub-title-frames {
+    text-align: center;
+    font-style: italic;
+}
+
+#content .member-avt {
+    padding-top: 15px;
+    width: 153px;
+}
+
+/*  tour  */ 
+
+#content .list-tickets {
+    background: #fff;
+    list-style: none;
+}
+
+#content .list-tickets li {
+    padding: 8px 16px;
+    font-size: 15px;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+#content .sold-out {
+    margin-left: 16px;
+    padding: 0 10px;
+    background: #f44336;
+    color: white;
+}
+
+#content .sold {
+    display: block;
+    float: right;
+    margin-top: -2px;
+    background: #000;
+    color: white;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#content .ticket-item {
+    width: 245px;
+    display: block;
+    background: #000;
+    margin: 0 auto;
+}
+
+#content .ticket-item img {
+    width: 100%;
+    display: block;
+}
+
+#content .ticket-item img:hover {
+    opacity: 0.4;
+}
+
+#content .contact-info i[class *= 'ti-'] {
+    width: 30px;
+    display: inline-block;
+    
+}
+
+#content .contact-info {
+    line-height: 1.5;
+}
+
+
+#content .contact-form {
+    font-size: 15px;
+
+}
+
+#content .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#content .form-submit {
+    float: right;
+    background: #000;
+    line-height: 25px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+}
+
+#content .map-footer img {
+    width: 100%;
+}
+
+/*========  End: Content  ========*/
+
+
+#footer {
+    padding: 64px 16px;
+}
+
+#footer .social-icon a{
+    text-decoration: none;
+    color: rgb(0 0 0 / 60%);
+    font-size: 24px;
+}
+
+#footer .social-icon,
+#footer .main-link {
+    text-align: center;
+}
+
+#footer .social-icon a:hover,
+#footer .main-link a:hover{
+    color:rgb(0 0 0 / 40%);
+}
+
+#footer .main-link {
+    margin-top: 15px;
+    color: rgb(0 0 0 / 60%);
+}
+
+#footer .main-link a {
+    color: rgb(0 0 0 / 60%);
+}

@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Cat - Shop</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./Assets/CSS/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./Assets/CSS/Base.CSS">
+    <link rel="stylesheet" href="./Assets/CSS/Main.CSS">
+</head>
+<body>
+    <div class="app">
+        <div id="app__header">
+            <div class="grid">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list-item header__nav-list-item--separate">
+                            Tải ứng dụng
+                            <div class="header__qr">
+                                <img src="./Assets/IMG/Application/QR_Application.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-app">
+                                    <a href="#" class="header__nav-list-item-link">
+                                        <img src="./Assets/IMG/Application/AppleStore.png" alt="" class="header__qr-download">
+                                    </a>                                    
+                                    <a href="#" class="header__nav-list-item-link">
+                                        <img src="./Assets/IMG/Application/GooglePlayStore.png" alt="" class="header__qr-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-list-item"> 
+                            <span class="header__nav-list-label--nop-point">kết nối:</span>
+                            <a href="#" class="header__nav-list-item-link"><i class="header__nav-icon fab fa-facebook-square"></i></a>
+                            <a href="#" class="header__nav-list-item-link"><i class="header__nav-icon fab fa-instagram"></i></a>
+                            
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-list-item-link">
+                                <i class="header__nav-icon far fa-bell"></i> Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông tin mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./Assets/IMG/Products/TShirt.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo thun chính hãng</span>
+                                                <span class="header__notify-desc">Một sản phẩm đến từ Amazoe</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./Assets/IMG/Products/TShirt.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo thun chính hãng</span>
+                                                <span class="header__notify-desc">Một sản phẩm đến từ Amazoe</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./Assets/IMG/Products/TShirt.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Áo thun chính hãng</span>
+                                                <span class="header__notify-desc">Một sản phẩm đến từ Amazoe</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="#" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-list-item-link">
+                                <i class="header__nav-icon far fa-question-circle"></i> Trợ giúp
+                            </a>
+                        </li>
+
+                        <!-- <li class="header__nav-list-item  header__nav-list-item--separate">
+                            <a href="#" class="header__nav-list-item-link header__nav-list-item-link--strong">Đăng ký</a>
+                        </li>
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-list-item-link header__nav-list-item-link--strong">Đăng nhập</a>
+                        </li> -->
+
+                        <li class="header__nav-item header__nav-user">
+                            <img src="./Assets/IMG/User/Default.png" alt="" class="header__nav-user-img">
+                            <span class="header__nav-user-name">Kiếm Luyện</span>
+
+                            <ul class="header__nav-user-menu">
+                                <li class="header__nav-user-item">
+                                    <a href="#">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__nav-user-item">
+                                    <a href="#">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__nav-user-item">
+                                    <a href="#">Đơn mua</a>
+                                </li>
+                                <li class="header__nav-user-item">
+                                    <a href="#">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--== Header with search ==-->
+                <div class="header__with-search">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./Assets/IMG/Logo/Logo_black.jpg" alt="Logo" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <form action="#" class="header__search-form">
+                            <div class="header__input-wrap">
+                                <input type="text" placeholder="Tìm sản phẩm, thương hiệu và tên shop" class="header__input-text">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-histor-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="#" class="header__search-history-link">Mũ Fedora</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="#" class="header__search-history-link">Áo thun nam</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="#" class="header__search-history-link">Quần jean</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="#" class="header__search-history-link">Dép tổ ong</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="#" class="header__search-history-link">Thuốc trị bệnh nghèo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <button class="header__input-submit"><i class="fas fa-search"></i></button>
+                        </form>
+
+                        <!--== navbar search ==-->
+                        <ul class="header__with-search-nav-list">
+                            <li class="header__with-search-nav-item"><a href="#">Váy</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Chân váy</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Kem chống nắng</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Bông tẩy trang</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Quần</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Áo croptop</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Son</a></li>
+                            <li class="header__with-search-nav-item"><a href="#">Túi sách nữ</a></li>
+                        </ul>
+                    </div>
+
+                    <!--== cart ==-->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-badge">2104</span>
+
+                            <!--|| empty cart (add clas): header__cart-list--empty ||-->
+                            <div class="header__cart-list">
+
+                                <!--== Begin: Const code ==-->
+                                <img src="./Assets/IMG/Cart/EmptyCart.png" alt="empty cart" class="header__cart-list-empty-img">
+                                <span class="header__cart-list-empty-message">Chưa có sản phẩm</span>
+                                <!--== End: Const code ==-->
+
+                                <h3 class="header__car-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-list-item">
+
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/IMG/Cart/Linux CỘNG SẢN.jpg" alt="Cart item" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cài hệ điều hành Linux sssssssssssssss ssssssssssssssssssssssssssssssssss</h5>
+                                                <div class="header__cart-item-wrap">
+                                                    <span class="header__cart-item-price">9999$</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Fedora 33</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/IMG/Cart/Linux CỘNG SẢN.jpg" alt="Cart item" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cài hệ điều hành Linux cho người mới bắt đầu :)</h5>
+                                                <div class="header__cart-item-wrap">
+                                                    <span class="header__cart-item-price">10$</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">123</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Ubuntu</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/IMG/Cart/Linux CỘNG SẢN.jpg" alt="Cart item" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cài hệ điều hành Linux dành cho người chuyên nghiệp :D</h5>
+                                                <div class="header__cart-item-wrap">
+                                                    <span class="header__cart-item-price">0.5$</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">5</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Kali linux</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/IMG/Cart/Linux CỘNG SẢN.jpg" alt="Cart item" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cài hệ điều hành Linux --- đành cho tất cả các chú chim cánh cụt </h5>
+                                                <div class="header__cart-item-wrap">
+                                                    <span class="header__cart-item-price">9999$</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Fedora 33</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/IMG/Cart/Linux CỘNG SẢN.jpg" alt="Cart item" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cài hệ điều hành Linux</h5>
+                                                <div class="header__cart-item-wrap">
+                                                    <span class="header__cart-item-price">9999$</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Fedora 33</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/IMG/Cart/Linux CỘNG SẢN.jpg" alt="Cart item" class="header__cart-item-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ cài hệ điều hành Linux</h5>
+                                                <div class="header__cart-item-wrap">
+                                                    <span class="header__cart-item-price">9999$</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">Phân loại: Fedora 33</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <button class="btn btn--primary header__cart-view">Xem giỏ hàng</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app__container">
+            <div class="app__content">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__col grid__col-2">
+    
+                            <nav class="category">
+                                <h3 class="category-heading">Danh mục</h3>
+                                <ul class="category-list">
+                                    <li class="category-item category-item--active">
+                                        <a href="#" class="category-item__link">Trang điểm mặt</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Trang điểm môi</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Trang điểm mắt chu</a>
+                                    </li>
+                                </ul>
+                            </nav>
+    
+                        </div>
+        
+                        <div class="grid__col grid__col-10">
+                            <div class="home-filter">
+                                <span class="home-filter__title">Sắp xếp theo</span>
+                                <button class="btn btn--normal">Phổ biến</button>
+                                <button class="btn btn--primary">Mới nhất</button>
+                                <button class="btn btn--normal">Bán chạy</button>
+    
+                                <div class="select-input">
+                                    <span class="select-input__label">Giá </i></span>
+                                    <i class="fas fa-angle-down"></i>
+
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="#" class="select-input__link">Thấp đến cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="#" class="select-input__link">Cao đến thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="home-filter__pagination">
+                                    <span class="home-filter__page-num">
+                                        <span class="home-filter__page-current">1</span>
+                                        /14
+                                    </span>
+                                    <div class="home-filter__page-control">
+                                        <a href="#" class="home-filter__page-btn home-filter__page-btn--disable">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="#" class="home-filter__page-btn">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--== Products ==-->
+                            <div class="home-product">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+                                    <div class="grid__col grid__col-2">
+                                        <!--home product-->
+                                        <a href="#" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url('./Assets/IMG/Products/TShirt.png');"></div>
+                                            <h4 class="home-product-item__name">Áo thun nam siêu xịn xò dành cho lập trình viên xịn (professional)</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">999.000.000.000$</span>
+                                                <span class="home-product-item__price-current">7.777.777$</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+
+                                                <!-- use home-product-item__like--enabled: to enable like -->
+                                                <span class="home-product-item__like home-product-item__like--enabled">
+                                                    <i class="home-product-item__like-icon far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon--enabled fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Whoo</span>
+                                                <span class="home-product-item__origin-name">Japanese</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    
+
+                                </div>
+                            </div>
+
+                            <ul class="pagination">
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+
+                                <li class="pagination-item pagination-item--active">
+                                    <a href="" class="pagination-item__link">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">3</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">4</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">5</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">...</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">14</a>
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <div id="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col grid__col-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Fedora</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Coding Cat</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col grid__col-2-4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Giới thiệu</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Tuyển dụng</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Điều khoản</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col grid__col-2-4">
+                        <h3 class="footer-heading">danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trang điểm mặt</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trang điểm mắt</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trang điểm môi</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col grid__col-2-4">
+                        <h3 class="footer-heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-linkedin-in"></i> 
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col grid__col-2-4">
+                        <h3 class="footer-heading">Mở hoặc tải ứng dụng</h3>
+                        <div class="footer-download">
+                            <img src="./Assets/IMG/Application/QR_Application.png" alt="QR code" class="footer-download__img">
+                            <div class="footer-download__app">
+                                <a href="" class="footer-download__app-link">
+                                    <img src="./Assets/IMG/Application/AppleStore.png" alt="Appstore" class="footer-download__app-img">
+                                </a>
+                                <a href="" class="footer-download__app-link">
+                                    <img src="./Assets/IMG/Application/GooglePlayStore.png" alt="Google Play" class="footer-download__app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__row">
+                    <p class="footer-copyright">&copy; 2021 - Bản quyền thuộc về Hoàng Đức Kiếm Luyện</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal layout-->
+        <!--<div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">-->
+                    
+                <!--authen register-->
+                <!-- <div class="authen-form">
+                    <div class="authen-form__container">
+                        <div class="authen-form__header">
+                            <h3 class="authen-form-heading">Đăng ký</h3>
+                            <span class="authen-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="authen-form__form">
+                            <div class="authen-form__group">
+                                <input type="text" class="authen-form__input" required placeholder="Email đăng ký"> 
+                            </div>
+                            <div class="authen-form__group">
+                                <input type="password" class="authen-form__input" required placeholder="Mật khẩu đăng ký"> 
+                            </div>
+                            <div class="authen-form__group">
+                                <input type="password" class="authen-form__input" required placeholder="Nhập lại mật khẩu"> 
+                            </div>
+                        </div>
+                        <div class="authen-form__aside">
+                            <p class="authen-form__policy-text">Bằng việc đăng ký, bạn đã đồng ý với Coding Cat về</p>
+                            <a class="authen-form__policy-link">Điều khoản dịch vụ</a> &
+                            <a class="authen-form__policy-link">Chính sách bảo mật</a> 
+                        </div>
+                        <div class="authen-form__control">
+                            <button class="btn authen-form__control-back  btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="authen-form__socials">
+                        <a href="#" class="btn btn--size-s btn--with-icon authen-form__socials--facebook">
+                            <i class="fab fa-facebook-square authen-form__socials-icon"></i>
+                            <span class="authen-form__socials-label">Kết nối với Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn--size-s btn--with-icon authen-form__socials--google">
+                            <i class="fab fa-google  authen-form__socials-icon"></i>
+                            <span class="authen-form__socials-label">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> -->
+            
+                <!--authen login-->
+                <!-- <div class="authen-form">
+                    <div class="authen-form__container">
+                        <div class="authen-form__header">
+                            <h3 class="authen-form-heading">Đăng nhập</h3>
+                            <span class="authen-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="authen-form__form">
+                            <div class="authen-form__group">
+                                <input type="text" class="authen-form__input" required placeholder="Email đăng ký"> 
+                            </div>
+                            <div class="authen-form__group">
+                                <input type="password" class="authen-form__input" required placeholder="Mật khẩu đăng ký"> 
+                            </div>
+                        </div>
+                        <div class="authen-form__aside">
+                            <div class="authen-form__help">
+                                <a href="#" class="authen-form__help-link authen-form__help-forgot">Quên mật khẩu</a>
+                                <span class="authen-form__help-separate"></span>
+                                <a href="#" class="authen-form__help-link authen-form__help-support">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="authen-form__control">
+                            <button class="btn authen-form__control-back  btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="authen-form__socials">
+                        <a href="#" class="btn btn--size-s btn--with-icon authen-form__socials--facebook">
+                            <i class="fab fa-facebook-square authen-form__socials-icon"></i>
+                            <span class="authen-form__socials-label">Kết nối với Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn--size-s btn--with-icon authen-form__socials--google">
+                            <i class="fab fa-google  authen-form__socials-icon"></i>
+                            <span class="authen-form__socials-label">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> -->
+
+            <!--</div>
+        </div>-->
+    </div>
+</body>
+</html>

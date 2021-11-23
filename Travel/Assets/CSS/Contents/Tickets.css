@@ -1,0 +1,218 @@
+/*==================================================================*\
+||                                                                  ||
+||  Project     : Coding Cat - Travel                               ||
+||  File name   : Tickets.css                                       ||
+||  File type   : Cascading Style Sheet                             ||
+||  Size (line) :                                                   ||
+||  Author      : Hoang Duc Kiem Luyen                              ||
+||  Created on  : 28/04/2021 | 08:00                                ||
+||  Copyright   : Coding Cat                                        ||
+||  Description : This is Tickets css file                          ||
+||                                                                  ||
+\*==================================================================*/
+
+
+/*========================== Begin: CODE ============================*/
+
+.content-ticket-sale__container {
+    display: flex;
+    align-items: center;
+    background-color: #f3a46b;
+    width: 100%;
+    height: 100%;
+}
+
+.content-ticket-sale__wrap {
+    padding: 4rem;
+}
+
+.content-ticket-sale__sub-heading {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.content-ticket-sale__heading {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 5rem;
+}
+
+.content-ticket-sale__heading > span{
+    font-size: 4rem;
+    color: white;
+    line-height: 2rem;
+    display: inline-block;
+    border-bottom: 0.5rem solid rgba(0,0,0,0.2);
+}
+
+.content-ticket-sale__number {
+    font-size: 3.6rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.content-ticket-sale__sub-number {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.content-ticket-sale__btn {
+    margin-top: 3rem;
+    color: #f3a46b;
+    text-transform: uppercase;
+}
+
+
+
+.content-ticket__img {
+    padding-top: 60%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #f1f1f1;
+    border-bottom: none;
+}
+
+.content-ticket__img-sale {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.5rem 1rem;
+    background: #555;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.content-ticket__logo1 {
+    position: absolute;
+    right: 2rem;
+    bottom: -2.5rem;
+    width: 5rem;
+    height: 5rem;
+    background-image: linear-gradient( #ffd205 0%, #ff9b05 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.content-ticket__logo2 {
+    position: absolute;
+    right: 2rem;
+    bottom: -2.5rem;
+    width: 5rem;
+    height: 5rem;
+    background-image: linear-gradient(#f76570 0%, #f78d65 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.content-ticket__logo-img {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.content-ticket__detail {
+    padding: 3rem;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+}
+
+.content-ticket__detail-heading-wrap {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.content-ticket__detail-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.content-ticket__detail-location {
+    font-size: 1.55rem;
+    letter-spacing: 2px;
+}
+
+.content-ticket__detail-link1,
+.content-ticket__detail-link2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.content-ticket__detail-link1 > span {
+     background: #ffd205;
+     color: white;
+     padding: 0 0.5rem;
+     border-radius: 3rem;
+     margin-left: 1rem;
+}
+
+.content-ticket__detail-link2 > span {
+     background: #f76570;
+     color: white;
+     padding: 0 0.5rem;
+     border-radius: 3rem;
+     margin-left: 1rem;
+}
+
+.content-ticket__detail-price {
+    color: #555;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: right;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content-ticket__detail-price-old {
+    text-decoration: line-through;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+.content-ticket__detail-desc {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+.content-ticket__detail-btn1 {
+    margin-top: 2rem;
+    background: #ffd205;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.content-ticket__detail-btn2 {
+    margin-top: 2rem;
+    background: #f76570;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+
+
+/*========================== End: CODE ============================*/

@@ -1,0 +1,39 @@
+/*=== begin: system control =======================================*/
+#____system_control____ {
+    position: fixed;
+    top: 30px; 
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+    overflow: auto;
+
+    transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#____system_control____.actived {
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#____system_control____ input {
+    margin: 10px 0;
+}
+
+/*=== End: system control =======================================*/

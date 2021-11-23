@@ -1,0 +1,22 @@
+/*==================================================================*\
+||                                                                  ||
+||  Project     : Coding Cat - Travel                               ||
+||  File name   : Content.css                                       ||
+||  File type   : Cascading Style Sheet                              ||
+||  Size (line) :                                                   ||
+||  Author      : Hoang Duc Kiem Luyen                              ||
+||  Created on  : 26/04/2021 | 12:30                                ||
+||  Copyright   : Coding Cat                                        ||
+||  Description : This is Content css file                          ||
+||                                                                  ||
+\*==================================================================*/
+
+
+/*========================== Begin: CODE ============================*/
+
+
+#application__content {
+    user-select: none;
+}
+
+/*========================== End: CODE ============================*/
